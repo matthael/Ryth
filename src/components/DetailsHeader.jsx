@@ -9,7 +9,7 @@ const DetailsHeader = ({ artistId, artistData, songData, songid }) => {
   const adamId = artistIdData ? artistIdData[0]?.id : null;
 
   const coverArtUrl = artistId
-    ? artist?.artwork?.url.replace("{w}", "500").replace("{h}", 500)
+    ? artist?.artwork?.url.replace("{w}", "500").replace("{h}", "500")
     : songApiData?.attributes.images?.coverArt;
 
   return (
